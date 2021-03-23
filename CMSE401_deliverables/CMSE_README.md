@@ -40,7 +40,7 @@ As an alternative, `pyro` can also be run using the `Pyro` class in a Python scr
 
 ## Submission Script
 
-To run the submisson script, run `pyro_advection_smooth.sb` from the `CMSE_deliverables` directory. This will submit the test case (see **Installation**) as a job to the HPCC. All of the output will be located in the `CMSE_deliverables` directory.
+To run the submisson script, run `pyro_advection_smooth.sb` from the `CMSE401_deliverables` directory. This will submit the test case (see **Installation**) as a job to the HPCC. All of the output will be located in the `CMSE401_deliverables` directory.
 
 ## References
 
