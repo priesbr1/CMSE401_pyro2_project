@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH -N 1
+#SBATCH -c 1
+#SBATCH --mem=5GB
+#SBATCH --time=00:10:00
+
+cd ${SLURM_SUBMIT_DIR}  # CMSE_deliverables
+
+SOLVER=$1
+TYPE=$2
+INPUTS=$3
+
+../pyro.py $SOLVER $TYPE $INPUTS vis.dovis=0  # no visualization -- doesn't make sense for batch job
+
+scontrol show job $SLURM_JOB_ID
